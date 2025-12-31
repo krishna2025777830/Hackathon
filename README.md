@@ -33,7 +33,7 @@ A comprehensive, hackathon-ready multi-agent AI system for career development an
 - Feedback loops for continuous improvement
 - Mock data for demo purposes
 
-## 📋 Project Structure
+## Project Structure
 
 ```
 careerpilot-ai/
