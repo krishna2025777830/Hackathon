@@ -2,7 +2,7 @@
 
 A comprehensive, hackathon-ready multi-agent AI system for career development and interview preparation. Built with FastAPI, SQLite, and autonomous AI agents orchestrated through LangGraph-inspired flows.
 
-## 🎯 Features
+## Features
 
 ### 8 Autonomous Agents
 1. **Profile Intelligence Agent** - Extracts and validates user profile data
@@ -95,7 +95,7 @@ careerpilot-ai/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -144,7 +144,7 @@ python -m http.server 3000
 
 Frontend will be available at `http://localhost:3000`
 
-## 📚 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/v1/auth/signup` - Create new account
@@ -175,7 +175,7 @@ Frontend will be available at `http://localhost:3000`
 - `POST /api/v1/opportunities/apply/{user_id}` - Apply for opportunity
 - `GET /api/v1/opportunities/recommendations/{user_id}` - Get recommended opportunities
 
-## 🤖 Agent Architecture
+## Agent Architecture
 
 ### Agent Flow
 
@@ -230,7 +230,7 @@ output: {
 }
 ```
 
-## 💾 Database Schema
+## Database Schema
 
 ### Tables
 - **users** - User accounts
@@ -242,7 +242,7 @@ output: {
 - **aptitude_scores** - Aptitude test results
 - **feedback_logs** - Performance feedback
 
-## 🎨 Frontend Features
+## Frontend Features
 
 ### Pages
 1. **Landing Page** (index.html)
@@ -279,7 +279,7 @@ output: {
 - **Accessibility**: Semantic HTML, proper contrast
 - **UX-Focused**: Clear CTAs, intuitive navigation
 
-## 📊 Example Workflows
+## Example Workflows
 
 ### 1. New User Journey
 1. Signup → Creates user account
@@ -305,7 +305,7 @@ output: {
 5. Provides score and improvement areas
 6. Feedback updates readiness score
 
-## 🔧 Customization
+## Customization
 
 ### Adding New Skills
 Edit `skill_learning_hours` in `skill_gap_agent.py`:
@@ -325,7 +325,7 @@ self.weeks_per_roadmap = 16  # Change from 12
 ### Extending Question Banks
 Add questions to agent's `_initialize_question_bank()` method.
 
-## 📝 Demo Credentials
+## Demo Credentials
 
 For testing without signup:
 ```
@@ -334,7 +334,7 @@ Password: demo123
 User ID: 1 (hardcoded for demo)
 ```
 
-## 🚢 Deployment
+## Deployment
 
 ### Backend (Heroku/AWS)
 ```bash
@@ -345,7 +345,7 @@ gunicorn -w 4 -b 0.0.0.0:$PORT app.main:app
 - Build: Static HTML/CSS/JS (no build step needed)
 - Deploy directory: `frontend/`
 
-## 🛣️ Future Enhancements
+## Future Enhancements
 
 1. **LLM Integration**: Replace mock data with OpenAI/Claude API
 2. **Vector Database**: Add FAISS for semantic search
@@ -356,7 +356,7 @@ gunicorn -w 4 -b 0.0.0.0:$PORT app.main:app
 7. **Analytics Dashboard**: Detailed progress tracking
 8. **Peer Learning**: Collaboration and study groups
 
-## 📖 Documentation
+## Documentation
 
 ### Agent Development
 - Each agent is self-contained
@@ -371,7 +371,7 @@ gunicorn -w 4 -b 0.0.0.0:$PORT app.main:app
 4. Add to orchestrator `__init__`
 5. Create route if needed
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Port already in use:**
 ```bash
@@ -388,27 +388,3 @@ rm careerpilot.db  # Reset database
 - Check `ALLOWED_ORIGINS` in `config.py`
 - Ensure frontend URL is whitelisted
 
-## 📄 License
-
-MIT License - Feel free to use for learning and hackathons!
-
-## 🙌 Contributing
-
-Contributions welcome! Please follow:
-1. PEP 8 for Python
-2. Semantic commits
-3. Descriptive PR titles
-4. Test before submitting
-
-## 📞 Support
-
-For issues or questions:
-1. Check existing GitHub issues
-2. Create detailed issue with reproduction steps
-3. Include Python/Node version info
-
----
-
-**Built with ❤️ for Career Development**
-
-Perfect for hackathons, coding interviews, and personal career growth!
